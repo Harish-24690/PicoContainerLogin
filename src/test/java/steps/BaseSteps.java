@@ -28,7 +28,7 @@ public class BaseSteps {
 	private WebDriver driver;
 	private Properties config = new Properties();
 	private FileInputStream fis;
-	private Boolean grid =false;
+	private Boolean grid =true;
 	private String DefaultUsername;
 	private String DefaultPassword;
 	public static final String USERNAME = "harish_g3JBs1";
@@ -89,7 +89,7 @@ public class BaseSteps {
 		
 		if(System.getenv("ExceutionType")!=null && System.getenv("ExceutionType").equals("Grid")){
 		
-		grid=true;
+		grid=false;
 	}
 	
 	DriverFactory.setRemote(grid);
