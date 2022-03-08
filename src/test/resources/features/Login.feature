@@ -1,7 +1,7 @@
 @login
 Feature: login to Printerpix.com
 
-  @loginwithchrome
+  @signin
   Scenario Outline: Navigate to Printerpix-USA and perform login
     Given User  launch by passing the parameters browser  "<browser>" and os  "<os>" and os_version  "<os_version>"and browser_version  "<browser_version>"
     When User navigates to "https://www.printerpix.com/"

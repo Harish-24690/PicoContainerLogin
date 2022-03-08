@@ -17,13 +17,13 @@ public CreateAccount(TestContextSetup testContextSetup){
 	}
 	
 	
-	@And("User clicks on Looking to create a new account link")
+	/*@And("User clicks on Looking to create a new account link")
 	public void user_clicks_on_looking_to_create_a_new_account_link() {
 		
 		RegisterPage register= testContextSetup.page.createNewAccountTab();
 		testContextSetup.register= register;
 	    
-	}
+	}*/
 
 	@And("User enter the EmailId has {string}")
 	public void user_enter_the_email_id_has(String email) {

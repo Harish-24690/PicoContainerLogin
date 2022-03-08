@@ -28,11 +28,11 @@ public class BaseSteps {
 	private WebDriver driver;
 	private Properties config = new Properties();
 	private FileInputStream fis;
-	private Boolean grid =false;
+	private Boolean grid =true;
 	private String DefaultUsername;
 	private String DefaultPassword;
-	public static final String USERNAME = "harish_g3JBs1";
-	public static final String AUTOMATE_KEY = "sr76wkzNqdxP6vHtzEuu";
+	public static final String USERNAME = "harishr_i63hWP";
+	public static final String AUTOMATE_KEY = "aTn81Ui9SyZqiK6WyDdh";
 	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
 	public String getDefaultUsername() {
@@ -87,10 +87,10 @@ public class BaseSteps {
 	
 	public void openBrowser(String browser ,String os ,String os_version ,String browser_version) {
 		
-		if(System.getenv("ExceutionType")!=null && System.getenv("ExceutionType").equals("Grid")){
+		/*if(System.getenv("ExceutionType")!=null && System.getenv("ExceutionType").equals("Grid")){
 		
 		grid=true;
-	}
+	}*/
 	
 	DriverFactory.setRemote(grid);
 	

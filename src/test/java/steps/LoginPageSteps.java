@@ -1,6 +1,7 @@
 package steps;
 
 import io.cucumber.java.en.And;
+import test.PageObjects.RegisterPage;
 import test.utilities.TestContextSetup;
 
 public class LoginPageSteps extends BaseSteps{
@@ -35,6 +36,14 @@ public LoginPageSteps(TestContextSetup testContextSetup){
 			e.printStackTrace();
 		}
 		testContextSetup.page.loginInButton();
+	    
+	}
+	
+	@And("User clicks on Looking to create a new account link")
+	public void user_clicks_on_looking_to_create_a_new_account_link() {
+		
+		RegisterPage register= testContextSetup.page.createNewAccountTab();
+		testContextSetup.register= register;
 	    
 	}
 

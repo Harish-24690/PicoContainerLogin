@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = {"src/test/resources/features"},
+		features = {"src/test/resources/features"},  //@login or @createAccount
 		glue= {"steps"},
-		tags = "@login " ,
+		tags = "@signin  " ,
 				
 		monochrome=true ,
 		plugin={"pretty","html:target/cucumber-html-report","json:target/cucumber-reports/cucumber.json","junit:target/cucumber-reports/cucumber.xml",
